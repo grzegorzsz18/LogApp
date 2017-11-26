@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.semafors.grzegorz.logaplication.StartActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.50" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="2"
+                app:srcCompat="@android:drawable/presence_online" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/activeUsers"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activeUsers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:layout_weight="2" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/activeUsersList"
+            android:layout_width="match_parent"
+            android:layout_height="252dp" />
+
+        <Button
+            android:id="@+id/showLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showLogs"
+            android:background="@color/colorPrimary"
+            android:text="@string/buttonShowLogs" />
+    </LinearLayout>
+</RelativeLayout>

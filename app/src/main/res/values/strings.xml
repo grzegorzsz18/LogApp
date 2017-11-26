@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LogAplication</string>
+    <string name="large_text"></string>
+    <string name="action_settings">Settings</string>
+    <string name="userName">Imie</string>
+    <string name="userSurname">Nazwisko</string>
+    <string name="logTime">Czas zalogowania</string>
+    <string name="goodPassword">Wprowadzone hasło</string>
+    <string name="isLogged">Zalogowany</string>
+    <string name="logOutTime">Czas Wylogowania</string>
+    <string name="badPassword">błędne</string>
+    <string name="goodPasswordText">poprawne</string>
+    <string name="activeUsers">aktywni użytkownicy</string>
+    <string name="buttonShowLogs">Pokaż logowania</string>
+</resources>
